@@ -350,7 +350,7 @@
     "uniques": [
       "Doesn't generate naturally",
       "Cannot be traded <hidden from users>",
-      "Stockpiled <every [10] turns> <if [Sawmill] is constructed> <in this city> <hidden from users>"
+      "Stockpiled <every [10] turns> <upon constructing [Lumber Camp]> <hidden from users>"
     ]
   },
   {
@@ -359,7 +359,7 @@
     "uniques": [
       "Doesn't generate naturally",
       "Cannot be traded <hidden from users>",
-      "Stockpiled <every [10] turns> <if [Kiln] is constructed> <in this city> <hidden from users>"
+      "Stockpiled <upon constructing [Kiln]> <hidden from users>"
     ]
   }
 ]
