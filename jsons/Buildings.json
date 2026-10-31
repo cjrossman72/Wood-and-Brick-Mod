@@ -16,20 +16,18 @@
     ]
   },
   {
-    "name": "Stone Works",
-    "requiredTech": "Calendar",
-    "happiness": 1,
-    "production": 1,
+    "name": "Kiln",
+    "requiredTech": "Pottery",
+    "culture": 1,
+    "cost": 50,
     "requiredNearbyImprovedResources": [
-      "Marble",
-      "Stone"
+      "Clay"
     ],
-    "maintenance": 1,
-    "hurryCostModifier": 0,
+    "hurryCostModifier": 25,
     "uniques": [
-      "Must not be on [Plains]",
-      "[+1 Production] from [Stone] tiles [in this city]",
-      "[+1 Production] from [Marble] tiles [in this city]",
+      "Destroyed when the city is captured",
+      "[+1 Production] <after discovering [Engineering]>",
+      "[+1 Production] from [Clay] tiles [in this city] <after discovering [Construction]>",
       "Instantly provides [1] [Brick] <for every [Clay]> <in this city>"
     ]
   },
@@ -50,34 +48,6 @@
     ]
   },
   {
-    "name": "Kiln",
-    "requiredTech": "Pottery",
-    "culture": 1,
-    "cost": 50,
-    "requiredNearbyImprovedResources": [
-      "Clay"
-    ],
-    "hurryCostModifier": 25,
-    "uniques": [
-      "Destroyed when the city is captured",
-      "[+1 Production] <after discovering [Engineering]>",
-      "[+1 Production] from [Clay] tiles [in this city] <after discovering [Construction]>",
-      "Instantly provides [1] [Brick] <for every [Clay]> <in this city>"
-    ]
-  },
-  {
-    "name": "Water Mill",
-    "requiredTech": "The Wheel",
-    "maintenance": 2,
-    "food": 2,
-    "production": 1,
-    "hurryCostModifier": 25,
-    "uniques": [
-      "Must be on [River]",
-      "Instantly provides [1] [Wood] <for every [Timber]> <in this city>"
-    ]
-  },
-  {
     "name": "Brickworks",
     "requiredTech": "Engineering",
     "production": 1,
@@ -91,6 +61,36 @@
       "[+1 Production] <after discovering [Machinery]>",
       "[+1 Culture] from [Clay] tiles [in this city]",
       "Instantly provides [1] [Brick] <for every [Clay]> <in this city>"
+    ]
+  },
+  {
+    "name": "Stone Works",
+    "requiredTech": "Calendar",
+    "happiness": 1,
+    "production": 1,
+    "requiredNearbyImprovedResources": [
+      "Marble",
+      "Stone"
+    ],
+    "maintenance": 1,
+    "hurryCostModifier": 0,
+    "uniques": [
+      "Must not be on [Plains]",
+      "[+1 Production] from [Stone] tiles [in this city]",
+      "[+1 Production] from [Marble] tiles [in this city]",
+      "Instantly provides [1] [Brick] <for every [Clay]> <in this city>"
+    ]
+  },
+  {
+    "name": "Water Mill",
+    "requiredTech": "The Wheel",
+    "maintenance": 2,
+    "food": 2,
+    "production": 1,
+    "hurryCostModifier": 25,
+    "uniques": [
+      "Must be on [River]",
+      "Instantly provides [1] [Wood] <for every [Timber]> <in this city>"
     ]
   },
   {
@@ -136,7 +136,7 @@
     "cityHealth": 50,
     "hurryCostModifier": 25,
     "uniques": [
-      "Only available <when number of [Timber] is more than [1]>",
+      "Only available <when number of [Brick] is more than [1]>",
       "Destroyed when the city is captured",
       "[{Your} {Water}] Units adjacent to this city heal [5] HP per turn when healing",
       "Must be next to [Coast]",
