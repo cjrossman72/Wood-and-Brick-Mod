@@ -124,19 +124,5 @@
       "[+1 Gold, +1 Food] <in [{Improved} {Salt}] tiles>",
       "Can only be built to improve a resource"
     ]
-  },
-  {
-    "name": "Road",
-    "terrainsCanBeBuiltOn": [
-      "Land",
-      "Coast"
-    ],
-    "turnsToBuild": 4,
-    "techRequired": "The Wheel",
-    "uniques": [
-      "Can be built outside your borders",
-      "Costs [1] [Gold] per turn"
-    ],
-    "shortcutKey": "R"
   }
 ]
