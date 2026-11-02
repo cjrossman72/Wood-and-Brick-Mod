@@ -78,6 +78,7 @@
       "Must not be on [Plains]",
       "[+1 Production] from [Stone] tiles [in this city]",
       "[+1 Production] from [Marble] tiles [in this city]",
+      "[+1 Production] from [Granite] tiles [in this city]",
       "Instantly provides [1] [Brick] <for every [Clay]> <in this city>"
     ]
   },
