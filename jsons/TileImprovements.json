@@ -135,8 +135,7 @@
     "techRequired": "The Wheel",
     "uniques": [
       "Can be built outside your borders",
-      "Costs [1] [Gold] per turn",
-      "Can only be built on [Coast] tiles <after discovering [Engineering]>"
+      "Costs [1] [Gold] per turn"
     ],
     "shortcutKey": "R"
   }
