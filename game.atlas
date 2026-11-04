@@ -18,7 +18,7 @@ BuildingIcons/Abbey
   orig: 100, 100
   offset: 0, 0
   index: -1
-BuildingIcons/Seminary
+BuildingIcons/Convent
   rotate: false
   xy: 200, 0
   size: 100, 100
@@ -462,6 +462,13 @@ ResourceIcons/Granite
 ImprovementIcons/Panning
   rotate: false
   xy: 500, 700
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+TechIcons/Spirituality
+  rotate: false
+  xy: 500, 800
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
