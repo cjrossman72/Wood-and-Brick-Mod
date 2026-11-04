@@ -228,7 +228,7 @@
   },
   {
     "name": "Jetavanarama Stupa",
-    "requiredTech": "Mathmatics",
+    "requiredTech": "Mathematics",
     "requiredResource": "Brick",
     "isWonder": true,
     "faith": 2,
