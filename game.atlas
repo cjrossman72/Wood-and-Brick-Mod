@@ -473,3 +473,10 @@ TechIcons/Spirituality
   orig: 100, 100
   offset: 0, 0
   index: -1
+UnitIcons/Abbot
+  rotate: false
+  xy: 500, 900
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
