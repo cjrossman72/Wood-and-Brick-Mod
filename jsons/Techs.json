@@ -1,0 +1,143 @@
+[
+  {
+    "columnNumber": 1,
+    "era": "Ancient era",
+    "techCost": 35,
+    "buildingCost": 60,
+    "wonderCost": 185,
+    "techs": [
+      {
+        "name": "Woodworking",
+        "row": 1,
+        "prerequisites": [
+          "Agriculture"
+        ],
+        "uniques": [
+          "[+100]% weight to this choice for AI decisions"
+        ],
+        "quote": "'As they say, a tree doesn't fall at the first blow.'\n— Njál's Saga"
+      },
+      {
+        "name": "Pottery",
+        "row": 3,
+        "prerequisites": [
+          "Agriculture"
+        ],
+        "uniques": [
+          "[+100]% weight to this choice for AI decisions"
+        ],
+        "quote": "'Shall the clay say to him that fashioneth it, what makest thou?' - Bible Isaiah 45:9"
+      }
+    ]
+  },
+  {
+    "columnNumber": 2,
+    "era": "Ancient era",
+    "techCost": 55,
+    "buildingCost": 75,
+    "wonderCost": 185,
+    "techs": [
+      {
+        "name": "Sailing",
+        "row": 1,
+        "prerequisites": [
+          "Woodworking"
+        ],
+        "uniques": [
+          "[+100]% weight to this choice for AI decisions"
+        ],
+        "quote": "'He who commands the sea has command of everything.' - Themistocles"
+      },
+      {
+        "name": "Shipbuilding",
+        "row": 2,
+        "prerequisites": [
+          "Woodworking"
+        ],
+        "uniques": [
+          "[+100]% weight to this choice for AI decisions"
+        ],
+        "quote": "'Hew wood in wind-time, in fine weather sail.'\n— Hávamál"
+      },
+      {
+        "name": "Calendar",
+        "row": 3,
+        "prerequisites": [
+          "Pottery"
+        ],
+        "uniques": [
+          "[+100]% weight to this choice for AI decisions"
+        ],
+        "quote": "'So teach us to number our days, so that we may apply our hearts unto wisdom.' - Bible Psalms 90:12"
+      },
+      {
+        "name": "Writing",
+        "row": 4,
+        "prerequisites": [
+          "Pottery"
+        ],
+        "uniques": [
+          "Enables establishment of embassies <Civilopedia link [Tutorials/Embassies]>"
+        ],
+        "quote": "'He who destroys a good book kills reason itself.' - John Milton"
+      }
+    ]
+  },
+  {
+    "columnNumber": 3,
+    "era": "Classical era",
+    "techCost": 105,
+    "buildingCost": 100,
+    "wonderCost": 250,
+    "techs": [
+      {
+        "name": "Optics",
+        "cost": 85,
+        "row": 1,
+        "prerequisites": [
+          "Sailing",
+          "Shipbuilding"
+        ],
+        "uniques": [
+          "Enables embarkation for land units"
+        ],
+        "quote": "'He made an instrument to know if the moon shine at full or no.' - Samuel Butler"
+      },
+      {
+        "name": "Spirituality",
+        "cost": 85,
+        "row": 3,
+        "prerequisites": [
+          "Calendar",
+          "Writing"
+        ],
+        "quote": "We are not human beings having a spiritual experience. We are spiritual beings having a human experience.\n- Pierre Teilhard de Chardin"
+      }
+    ]
+  },
+  {
+    "columnNumber": 4,
+    "era": "Classical era",
+    "techCost": 175,
+    "buildingCost": 100,
+    "wonderCost": 250,
+    "techs": [
+      {
+        "name": "Philosophy",
+        "row": 2,
+        "prerequisites": [
+          "Spirituality"
+        ],
+        "quote": "'There is only one good, knowledge, and one evil, ignorance.' - Socrates"
+      },
+      {
+        "name": "Drama and Poetry",
+        "row": 3,
+        "prerequisites": [
+          "Spirituality"
+        ],
+        "quote": "'What is drama but life with the dull bits cut out.' - Alfred Hitchcock"
+      }
+    ]
+  }
+]

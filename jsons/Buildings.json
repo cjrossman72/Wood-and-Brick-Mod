@@ -1,0 +1,317 @@
+[
+  // Ancient Era
+  // New Wood/Brick Bldgs
+  {
+    "name": "Lumber Camp",
+    "requiredTech": "Woodworking",
+    "production": 1,
+    "cost": 50,
+    "requiredNearbyImprovedResources": [
+      "Timber"
+    ],
+    "hurryCostModifier": 25,
+    "uniques": [
+      "Destroyed when the city is captured",
+      "[+1 Production] <after discovering [Engineering]>",
+      "[+1 Production] from [Timber] tiles [in this city] <after discovering [Mathmatics]>",
+      "Instantly provides [1] [Wood] <for every [Timber]> <in this city>"
+    ]
+  },
+  {
+    "name": "Kiln",
+    "requiredTech": "Pottery",
+    "culture": 1,
+    "cost": 50,
+    "requiredNearbyImprovedResources": [
+      "Clay"
+    ],
+    "hurryCostModifier": 25,
+    "uniques": [
+      "Destroyed when the city is captured",
+      "[+1 Production] <after discovering [Engineering]>",
+      "[+1 Production] from [Clay] tiles [in this city] <after discovering [Construction]>",
+      "Instantly provides [1] [Brick] <for every [Clay]> <in this city>"
+    ]
+  },
+  {
+    "name": "Sawmill",
+    "requiredTech": "Iron Working",
+    "production": 1,
+    "cost": 125,
+    "requiredNearbyImprovedResources": [
+      "Timber"
+    ],
+    "hurryCostModifier": 25,
+    "uniques": [
+      "Destroyed when the city is captured",
+      "[+1 Production] <after discovering [Steel]>",
+      "[+1 Production] from [Timber] tiles [in this city]",
+      "Instantly provides [1] [Wood] <for every [Timber]> <in this city>"
+    ]
+  },
+  {
+    "name": "Brickworks",
+    "requiredTech": "Engineering",
+    "production": 1,
+    "cost": 125,
+    "requiredNearbyImprovedResources": [
+      "Clay"
+    ],
+    "hurryCostModifier": 25,
+    "uniques": [
+      "Destroyed when the city is captured",
+      "[+1 Production] <after discovering [Machinery]>",
+      "[+1 Culture] from [Clay] tiles [in this city]",
+      "Instantly provides [1] [Brick] <for every [Clay]> <in this city>"
+    ]
+  },
+  // Modified Bldgs
+  {
+    "name": "Water Mill",
+    "requiredTech": "The Wheel",
+    "requiredNearbyImprovedResources": [
+      "Timber"
+    ],
+    "maintenance": 2,
+    "food": 2,
+    "production": 1,
+    "hurryCostModifier": 25,
+    "uniques": [
+      "Must be on [River]",
+      "Instantly provides [1] [Wood] <for every [Timber]> <in this city>"
+    ]
+  },
+  {
+    "name": "Stone Works",
+    "requiredTech": "Calendar",
+    "happiness": 1,
+    "production": 1,
+    "requiredNearbyImprovedResources": [
+      "Marble",
+      "Stone",
+      "Granite"
+    ],
+    "maintenance": 1,
+    "hurryCostModifier": 0,
+    "uniques": [
+      "Must not be on [Plains]",
+      "[+1 Production] from [Stone] tiles [in this city]",
+      "[+1 Production] from [Marble] tiles [in this city]",
+      "[+1 Production] from [Granite] tiles [in this city]",
+      "Instantly provides [1] [Brick] <for every [Clay]> <in this city>"
+    ]
+  },
+  {
+    "name": "Aqueduct",
+    "requiredTech": "Engineering",
+    "requiredResource": "Brick",
+    "maintenance": 1,
+    "hurryCostModifier": 0,
+    "uniques": [
+      "[40]% Food is carried over after population increases [in this city]",
+      "Costs [2] [Brick]"
+    ]
+  },
+  {
+    "name": "Amphitheater",
+    "requiredTech": "Drama and Poetry",
+    "requiredResource": "Wood",
+    "culture": 3,
+    "specialistSlots": {
+      "Artist": 1
+    },
+    "requiredBuilding": "Monument",
+    "maintenance": 2,
+    "hurryCostModifier": 25,
+    "uniques": [
+      "Destroyed when the city is captured",
+      "Costs [2] [Wood]"
+    ]
+  },
+  // Consumes Wood/Brick
+  {
+    "name": "Shipyard",
+    "requiredTech": "Shipbuilding",
+    "requiredResource": "Wood",
+    "isWonder": true,
+    "production": 1,
+    "science": 1,
+    "cost": 125,
+    "hurryCostModifier": 25,
+    "uniques": [
+      "Destroyed when the city is captured",
+      "All newly-trained [{Military} {Water}] units [in all cities] receive the [Boarding Party I] promotion",
+      "[{Military} {Water}] units gain the [Boarding Party I] promotion",
+      "Costs [2] [Wood]",
+      "Must be next to [Coast]"
+    ]
+  },
+  {
+    "name": "Praetorium",
+    "requiredTech": "The Wheel",
+    "requiredResource": "Brick",
+    "isWonder": true,
+    "production": 1,
+    "science": 1,
+    "cost": 125,
+    "hurryCostModifier": 25,
+    "uniques": [
+      "Destroyed when the city is captured",
+      "All newly-trained [{Military} {Land}] units [in all cities] receive the [Cover I] promotion",
+      "[{Military} {Land}] units gain the [Cover I] promotion",
+      "Costs [2] [Brick]",
+      "Must not be next to [Coast]"
+    ]
+  },
+  {
+    "name": "Timber Ramparts",
+    "requiredTech": "Optics",
+    "requiredResource": "Wood",
+    "cityStrength": 5,
+    "cityHealth": 25,
+    "hurryCostModifier": 25,
+    "uniques": [
+      "Destroyed when the city is captured",
+      "All newly-trained [Warrior] units [in all cities] receive the [Shock I] promotion",
+      "[Warrior] units gain the [Shock I] promotion",
+      "Instantly consumes [2] [Wood]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Defensive timber log walls eight to ten feet high with angled, spiked logs facing outward to prevent mounted units from jumping the wall."
+      }
+    ]
+  },
+  {
+    "name": "Seawall",
+    "requiredTech": "Construction",
+    "requiredResource": "Brick",
+    "cityStrength": 5,
+    "cityHealth": 50,
+    "hurryCostModifier": 25,
+    "uniques": [
+      "Only available <when number of [Brick] is more than [1]>",
+      "Destroyed when the city is captured",
+      "[{Your} {Water}] Units adjacent to this city heal [5] HP per turn when healing",
+      "Must be next to [Coast]",
+      "Costs [2] [Brick]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "These defense structures are constructed near to coasts to protect ships and to repel sea-faring invaders."
+      }
+    ]
+  },
+  // New Wonders
+  {
+    "name": "Horyu-ji Temple",
+    "isWonder": true,
+    "requiredTech": "Spirituality",
+    "requiredResource": "Wood",
+    "greatPersonPoints": {
+      "Great Engineer": 2
+    },
+    "faith": 2,
+    "culture": 3,
+    "cost": 175,
+    "hurryCostModifier": 25,
+    "uniques": [
+      "Destroyed when the city is captured",
+      "Religion naturally spreads to cities [5] tiles away",
+      "Costs [3] [Wood]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Built around 607 AD, it is widely recognized as one of the oldest surviving wooden-constructed buildings in the world, utilizing ancient Japanese cypress."
+      }
+    ]
+  },
+  {
+    "name": "Jetavanarama Stupa",
+    "requiredTech": "Mathmatics",
+    "requiredResource": "Brick",
+    "isWonder": true,
+    "faith": 2,
+    "culture": 2,
+    "greatPersonPoints": {
+      "Great Engineer": 1
+    },
+    "uniques": [
+      "Only available <when religion is enabled>",
+      "All healing effects doubled <for [Wounded] units> <in this city>",
+      "Costs [3] [Brick]"
+    ],
+    "quote": "And the Obelisk\nThat has forgotten the Egyptian words\nHas not blossomed this year\n- Vicente Huidobro"
+  },
+  // Modified Wonders
+  {
+    "name": "Mausoleum of Halicarnassus",
+    "culture": 1,
+    "greatPersonPoints": {
+      "Great Merchant": 1
+    },
+    "isWonder": true,
+    "uniques": [
+      "Gain [100] [Gold] <upon expending a [Great Person] unit> <(modified by game speed)>",
+      "[+2 Gold] from [Marble] tiles [in this city]",
+      "[+2 Gold] from [Stone] tiles [in this city]",
+      "[+2 Gold] from [Granite] tiles [in this city]"
+    ],
+    "requiredTech": "Masonry",
+    "quote": "'The whole earth is the tomb of heroic men and their story is not given only on stone over their clay but abides everywhere without visible symbol woven into the stuff of other men's lives.' - Pericles"
+  },
+  // New Spiritual Bldgs
+  {
+    "name": "Roman Obelisk",
+    "requiredTech": "Spirituality",
+    "faith": 3,
+    "culture": 2,
+    "isWonder": true,
+    "requiredNearbyImprovedResources": [
+      "Granite"
+    ],
+    "greatPersonPoints": {
+      "Great Prophet": 1
+    },
+    "uniques": [
+      "Only available <when religion is enabled>",
+      "[+1 Happiness] from [Granite] tiles [in this city]"
+    ],
+    "quote": "And the Obelisk\nThat has forgotten the Egyptian words\nHas not blossomed this year\n- Vicente Huidobro"
+  },
+  {
+    "name": "Abbey",
+    "requiredTech": "Spirituality",
+    "faith": 1,
+    "culture": 1,
+    "cost": 175,
+    "hurryCostModifier": 25,
+    "uniques": [
+      "Destroyed when the city is captured",
+      "[15]% Great Person generation [in this city]",
+      "Free [Abbot] appears"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Built around 607 AD, it is widely recognized as one of the oldest surviving wooden-constructed buildings in the world, utilizing ancient Japanese cypress."
+      }
+    ]
+  },
+  {
+    "name": "Convent",
+    "requiredTech": "Spirituality",
+    "faith": 1,
+    "happiness": 2,
+    "cost": 75,
+    "hurryCostModifier": 25,
+    "uniques": [
+      "Destroyed when the city is captured",
+      "[+2 Happiness] <in cities following our religion> <in this city>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Built around 607 AD, it is widely recognized as one of the oldest surviving wooden-constructed buildings in the world, utilizing ancient Japanese cypress."
+      }
+    ]
+  }
+]
