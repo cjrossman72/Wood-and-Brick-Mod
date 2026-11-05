@@ -14,7 +14,7 @@
       "Destroyed when the city is captured",
       "[+1 Production] <after discovering [Engineering]>",
       "[+1 Production] from [Timber] tiles [in this city] <after discovering [Mathmatics]>",
-      "Instantly provides [1] [Wood] <for every [Timber]> <in this city>"
+      "Instantly gain [1] [Wood] <for every [Timber]> <in this city>"
     ]
   },
   {
@@ -30,7 +30,7 @@
       "Destroyed when the city is captured",
       "[+1 Production] <after discovering [Engineering]>",
       "[+1 Production] from [Clay] tiles [in this city] <after discovering [Construction]>",
-      "Instantly provides [1] [Brick] <for every [Clay]> <in this city>"
+      "Instantly gain [1] [Brick] <for every [Clay]> <in this city>"
     ]
   },
   {
@@ -46,7 +46,7 @@
       "Destroyed when the city is captured",
       "[+1 Production] <after discovering [Steel]>",
       "[+1 Production] from [Timber] tiles [in this city]",
-      "Instantly provides [1] [Wood] <for every [Timber]> <in this city>"
+      "Instantly gain [1] [Wood] <for every [Timber]> <in this city>"
     ]
   },
   {
@@ -62,7 +62,7 @@
       "Destroyed when the city is captured",
       "[+1 Production] <after discovering [Machinery]>",
       "[+1 Culture] from [Clay] tiles [in this city]",
-      "Instantly provides [1] [Brick] <for every [Clay]> <in this city>"
+      "Instantly gain [1] [Brick] <for every [Clay]> <in this city>"
     ]
   },
   // Modified Bldgs
@@ -78,7 +78,7 @@
     "hurryCostModifier": 25,
     "uniques": [
       "Must be on [River]",
-      "Instantly provides [1] [Wood] <for every [Timber]> <in this city>"
+      "Instantly gain [1] [Wood] <for every [Timber]> <in this city>"
     ]
   },
   {
@@ -98,16 +98,16 @@
       "[+1 Production] from [Stone] tiles [in this city]",
       "[+1 Production] from [Marble] tiles [in this city]",
       "[+1 Production] from [Granite] tiles [in this city]",
-      "Instantly provides [1] [Brick] <for every [Clay]> <in this city>"
+      "Instantly gain [1] [Brick] <for every [Clay]> <in this city>"
     ]
   },
   {
     "name": "Aqueduct",
     "requiredTech": "Engineering",
-    "requiredResource": "Brick",
     "maintenance": 1,
     "hurryCostModifier": 0,
     "uniques": [
+      "Only available <when number of [Brick] is more than [1]>",
       "[40]% Food is carried over after population increases [in this city]",
       "Costs [2] [Brick]"
     ]
@@ -115,7 +115,6 @@
   {
     "name": "Amphitheater",
     "requiredTech": "Drama and Poetry",
-    "requiredResource": "Wood",
     "culture": 3,
     "specialistSlots": {
       "Artist": 1
@@ -124,6 +123,7 @@
     "maintenance": 2,
     "hurryCostModifier": 25,
     "uniques": [
+      "Only available <when number of [Wood] is more than [1]>",
       "Destroyed when the city is captured",
       "Costs [2] [Wood]"
     ]
@@ -132,49 +132,49 @@
   {
     "name": "Shipyard",
     "requiredTech": "Shipbuilding",
-    "requiredResource": "Wood",
     "isWonder": true,
     "production": 1,
     "science": 1,
     "cost": 125,
     "hurryCostModifier": 25,
     "uniques": [
+      "Only available <when number of [Wood] is more than [2]>",
       "Destroyed when the city is captured",
       "All newly-trained [{Military} {Water}] units [in all cities] receive the [Boarding Party I] promotion",
       "[{Military} {Water}] units gain the [Boarding Party I] promotion",
-      "Costs [2] [Wood]",
+      "Costs [3] [Wood]",
       "Must be next to [Coast]"
     ]
   },
   {
     "name": "Praetorium",
     "requiredTech": "The Wheel",
-    "requiredResource": "Brick",
     "isWonder": true,
     "production": 1,
     "science": 1,
     "cost": 125,
     "hurryCostModifier": 25,
     "uniques": [
+      "Only available <when number of [Brick] is more than [2]>",
       "Destroyed when the city is captured",
       "All newly-trained [{Military} {Land}] units [in all cities] receive the [Cover I] promotion",
       "[{Military} {Land}] units gain the [Cover I] promotion",
-      "Costs [2] [Brick]",
+      "Costs [3] [Brick]",
       "Must not be next to [Coast]"
     ]
   },
   {
     "name": "Timber Ramparts",
     "requiredTech": "Optics",
-    "requiredResource": "Wood",
     "cityStrength": 5,
     "cityHealth": 25,
     "hurryCostModifier": 25,
     "uniques": [
+      "Only available <when number of [Wood] is more than [1]>",
       "Destroyed when the city is captured",
       "All newly-trained [Warrior] units [in all cities] receive the [Shock I] promotion",
       "[Warrior] units gain the [Shock I] promotion",
-      "Instantly consumes [2] [Wood]"
+      "Costs [2] [Wood]"
     ],
     "civilopediaText": [
       {
@@ -185,7 +185,6 @@
   {
     "name": "Seawall",
     "requiredTech": "Construction",
-    "requiredResource": "Brick",
     "cityStrength": 5,
     "cityHealth": 50,
     "hurryCostModifier": 25,
@@ -207,7 +206,6 @@
     "name": "Horyu-ji Temple",
     "isWonder": true,
     "requiredTech": "Spirituality",
-    "requiredResource": "Wood",
     "greatPersonPoints": {
       "Great Engineer": 2
     },
@@ -216,6 +214,7 @@
     "cost": 175,
     "hurryCostModifier": 25,
     "uniques": [
+      "Only available <when number of [Wood] is more than [2]>",
       "Destroyed when the city is captured",
       "Religion naturally spreads to cities [5] tiles away",
       "Costs [3] [Wood]"
@@ -229,7 +228,6 @@
   {
     "name": "Jetavanarama Stupa",
     "requiredTech": "Mathematics",
-    "requiredResource": "Brick",
     "isWonder": true,
     "faith": 2,
     "culture": 2,
@@ -237,6 +235,7 @@
       "Great Engineer": 1
     },
     "uniques": [
+      "Only available <when number of [Brick] is more than [2]>",
       "Only available <when religion is enabled>",
       "All healing effects doubled <for [Wounded] units> <in this city>",
       "Costs [3] [Brick]"
